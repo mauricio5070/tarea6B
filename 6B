@@ -1,0 +1,33 @@
+1.	Cuáles son las diferencias en la lista y la tupla?
+Las listas presentan una serie de funciones adicionales que permiten un amplio manejo de los valores que contienen. Una lista puede ser alterada, no así una tupla. Una tupla puede ser utilizada como clave en un diccionario, no así una lista. Una tupla consume menos espacio que una lista.
+2.	Cómo se puede usar expresiones if else en una sóloa línea, comúnmente llamadas operaraciones ternarias
+           elif
+3.	Para que sirve dir() y help()?
+La función de help() se usa para mostrar documentación y también facilita ver  ayuda relacionada con módulos, palabras clave, atributos, etc.
+La función dir () se utiliza para mostrar los símbolos definidos.
+4.	Que son diccionarios?
+           son un tipo de estructuras de datos que permite guardar un conjunto no ordenado de pares clave-valor, siendo las claves únicas dentro de un mismo diccionario (es decir que no pueden existir dos elementos con una misma clave)
+5.	Que son *args y **kwargs ? Como se usan?
+De la descripción de la función podemos ver que args representa un conjunto arbitrario de argumentos posicionales, mientras que kwargs es lo mismo pero con argumentos con keyword, o nombre.
+6.	Qué son índices negativos?
+7.	Como se puede order aleatoriamente -o desordenar- una lista?
+8.	Como se puede ordenar una lista ?
+9.	Explique o justifique los resultados de A0,A1,A2,A3,A4,A5,A6 ?
+A0 = dict(zip(('a','b','c','d','e'),(1,2,3,4,5)))
+A1 = range(10)
+A2 = sorted([i for i in A1 if i in A0])
+A3 = sorted([A0[s] for s in A0])
+A4 = [i for i in A1 if i in A3]
+A5 = {i:i*i for i in A1}
+A6 = [[i,i*i] for i in A1]
+print(A0,A1,A2,A3,A4,A5,A6)
+1.	Cómo se pueden generar números aleatorios? enteros y decimales
+import random
+
+2.	Qué es pickling y unpickling?
+ El pickling es un módulo que implementa protocolos binarios para serializar y deserializar una estructura de objetos Python.
+3.	Para que sirve la función map, lambda y filter?
+map() ejecuta una función sobre cada uno de los elementos de un iterador (generalmente una lista o tupla) y retorna un nuevo iterador cuyos elementos son el resultado de dicha operación.
+Una función lambda es cuando enviamos a una función de orden superior directamente una función anónima.
+La función filter() a partir de una lista o iterador y una función condicional, es capaz de devolver una nueva colección con los elementos filtrados que cumplan la condición.
+4.	Qué es list comprehension, set comprehension y dict comprehension?
